@@ -1,0 +1,152 @@
+@charset "UTF=8";
+
+
+body{
+    background-color: rgba(156, 234, 234, 0.23);
+}
+
+header > h1.principal{
+    border: 12px solid black;
+    border-image-source: url('/imagens/Sem\ título.png');
+    border-image-slice: 39;
+    border-image-repeat: repeat;
+}
+
+main{
+    background-color: rgba(255, 228, 196, 0.581);
+    width: 700px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.086);
+    border-radius: 15px;
+}
+main > h1.titulo{
+    background-color: rgba(0, 0, 255, 0.603);
+}
+
+h1{
+    font-family: TrickOfDead;
+    text-align: center;
+    background-color: rgba(232, 157, 64, 0.705);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+
+h2{
+    font-family: TrickOfDead;
+  text-align: justify;
+}
+
+p{
+    text-align: justify;
+    font-family: TrickOfDead;
+}
+
+a{
+ background-color: rgb(0, 0, 231);
+ color: white;
+ border-radius: 5px;
+ text-decoration: none;
+ padding: 2px;
+ display: flex;
+justify-content: center;
+}
+
+.primeiro{
+   color: blue; 
+   background-color:rgba(0, 0, 0, 0.322);
+   border-radius: 4px;
+   padding: 5px;
+}
+
+a:hover{
+    background-color: rgba(0, 0, 231, 0.426);
+    color: rgb(0, 0, 0);
+    border-radius: 6px;
+    text-decoration: none;
+   }
+
+   a:visited{
+    background-color: rgba(8, 8, 123, 0.392);
+    color: rgb(171, 169, 169);
+   }
+
+   a:active{
+    color: red;
+   }
+
+   p:hover{
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.615);
+   }
+
+   div > p {
+   background-color: cyan; 
+   display:none;
+   }
+   div:hover > p {
+    display:block;
+    background-color: blueviolet;
+   }
+
+   a::after{
+    content: '[link]';
+    color: rgb(242, 23, 8);
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif
+   }
+   a.youtube {
+    background-color: red;
+    color: white;
+   }
+
+   section .artigo{
+    background-color: rgb(240, 248, 255);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 3px 5px rgba(187, 174, 114, 0.09);
+   }
+
+   section > article >h1.artigodosite{
+    background-color: rgba(172, 255, 47, 0.601);
+    border-radius: 4px;
+    padding: 10px;
+    margin: 0px;
+    box-shadow: 4px 2px 6px rgba(128, 128, 128, 0.514);
+   }
+
+   footer > p > a{
+    width:90px;
+    margin: auto;
+    height: 20px;
+    padding: 10px;
+   }
+
+   section > h1.titulo{
+        background-color: pink;
+        padding: 5px ;
+   }
+
+   section > h2.testando{
+    background-color: rgb(247, 217, 171);
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+   }
+   
+   h2.texto{
+    background-color: rgba(221, 175, 114, 0.6);
+    text-align: center;
+    border-radius: 5px;
+   }
+
+   
+
+
+   
+
+  
+
