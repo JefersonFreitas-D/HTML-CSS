@@ -1,26 +1,31 @@
 @charset "UTF-8";
 
 body {
-    background-image: url(imagens/wallpaper001.jpg);
+
+  
 }
-div.quadrado {
-    display: inline-block;
-    border: 2px solid #000000;
-    height: 300px;
-    width: 300px;
+
+div.bloco {
+    height: 200px;
+    border: 3px solid black;
+    margin: 10px;
     border-radius: 10px;
-} 
-
-div#i1 {
-background-image: url('imagens/pattern001.png');
+    background-image: url('imagens/wallpaper003.jpg');
 
 }
 
-div#i2 {
-background-image: url('imagens/pattern002.png');
+div#f1 {
+background-position:right top;
 
 }
 
-div#i3 {
-background-image: url(imagens/pattern003.png)
+div#f2 {
+background-position: center;
+
+}
+
+div#f3 {
+background-position: right bottom;
+
+
 }
