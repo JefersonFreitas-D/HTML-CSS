@@ -20,8 +20,7 @@ table {
     border-collapse: collapse;
     background-color: white;
     border: 1px solid black;
-    margin-top: 250px;
-   
+
 }
 
 tr {
@@ -47,16 +46,38 @@ th {
     text-align: center;
 }
 
-div > iframe {
-    margin-top: 20px;
-    border: none;
-    width: 30vw;
-    height: 200px;
+#t {
 
-    display: inline-block;
-    
+    width: 500px;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+    border: 1px solid black;
+}
+
+th.thh  {
+    background-color: gray;
+    color: white;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+#me {
 
 }
+
+#mh {
+
+}
+   
+
+
+
 
 
 
@@ -157,22 +178,106 @@ div > iframe {
     <td>Taxi Driver</td>
     <td>Toy Story</td>
 
-
-
-
 </tr>
+
+
+</tbody>
+    </table>
+
+
+    <table id="t">
+
+        <thead>
+
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+                <th>E</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <th class="thh" scope="rowgroup" rowspan="2">Área</th>
+                <th class="thh" rowspan="2">Disciplinas</th>
+                <th class="thh" colspan="2" scope="colgroup">Notas</th>
+                <th class="thh" scope="rowgroup" rowspan="2">Média</th>
+                <tr>
+                    <th class="thh">Nota 1</th>
+                    <th class="thh">Nota 2</th>
+                </tr>
+
+                <tr>
+
+                    <th rowspan="4">Exatas</th>
+                        <td>Matemática</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                    </tr>
+                    <tr>
+                        <td>Química</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                    </tr>
+                    <tr>
+                        <td>Biologia</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                    </tr>
+
+                    <tr>
+                        <th class="thh" id="me" colspan="4">Média de Exatas</th>
+                        <td>0.0</td>
+
+                    </tr>
+
+                    <tr>
+                        <th rowspan="2">Humanas</th>
+                        <td>História</td>
+                        <tr>
+                            <td>Geografia</td>
+                        </tr>
+                    </tr>
+
+                    <tr>
+                        <th class="thh" id="mh" colspan="5">Média de Humanas</th>
+                        <td>0.0</td>
+                    </tr>
+
+                    
+                        
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
         </tbody>
-
-
-
-
-
-
-
 
 
 
@@ -222,10 +327,7 @@ div > iframe {
 
 
 
-<div>
-    <iframe name=Player "" src="//%72%65%64%65%63%61%6E%61%69%73%2E%67%73/player3/server.php?server=RCServer24&subfolder=ondemand&vid=SILOT02EP01" frameborder=0 height=400 scrolling=no width=640 allow="encrypted-media" allowFullScreen> </iframe>
 
-</div>
 
 
 
