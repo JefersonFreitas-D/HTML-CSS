@@ -8,6 +8,11 @@
 
 <style>
 
+    * {
+        font-family: 'Arial, Helvetia', sans-serif;
+
+    }
+
 body {
     background-color: rgba(0, 81, 255, 0.082);
     text-align: center;
@@ -24,13 +29,13 @@ table {
 }
 
 tr {
-    border: 1px solid black;
+    border: 2px solid black;
     
    
 }
 
 td {
-    border: 1px solid black;
+    border: 2px solid black;
     text-align: center;
     background-color: white;
 }
@@ -41,18 +46,19 @@ thead {
 }
 
 th {
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 10px;
     text-align: center;
 }
 
 #t {
 
-    width: 500px;
+    width: 700px;
     margin: auto;
     border-collapse: collapse;
     background-color: white;
-    border: 1px solid black;
+    border: 2px solid black;
+    margin-top: 40px;
 }
 
 th.thh  {
@@ -61,20 +67,22 @@ th.thh  {
     font-weight: bolder;
 }
 
+.media {
 
-
-
-
-
+    background-color: gray;
+    color: white;
+    font-weight: bolder;
+}
 
 #me {
-
+   text-align: left;
+   font-weight: bolder;
 }
 
 #mh {
-
+    text-align: left;
+    font-weight: bolder;
 }
-   
 
 
 
@@ -202,7 +210,7 @@ th.thh  {
         <tbody>
             <tr>
                 <th class="thh" scope="rowgroup" rowspan="2">Área</th>
-                <th class="thh" rowspan="2">Disciplinas</th>
+                <th class="thh" scope="rowgroup" rowspan="2">Disciplinas</th>
                 <th class="thh" colspan="2" scope="colgroup">Notas</th>
                 <th class="thh" scope="rowgroup" rowspan="2">Média</th>
                 <tr>
@@ -212,12 +220,24 @@ th.thh  {
 
                 <tr>
 
-                    <th rowspan="4">Exatas</th>
+                    <th scope="rowgroup" rowspan="4">Exatas</th>
                         <td>Matemática</td>
                         <td>0.0</td>
                         <td>0.0</td>
                         <td>0.0</td>
                     </tr>
+
+                    <tr>
+                        <td>Física</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+
+
+                    </tr>
+
+
+
                     <tr>
                         <td>Química</td>
                         <td>0.0</td>
@@ -229,25 +249,33 @@ th.thh  {
                         <td>0.0</td>
                         <td>0.0</td>
                         <td>0.0</td>
+
+                        <tr>
+                            <th class="thh" scope="row" id="me" colspan="4">Média de Exatas</th>
+                            <td class="media">0.0</td>
+    
+                        </tr>
                     </tr>
 
-                    <tr>
-                        <th class="thh" id="me" colspan="4">Média de Exatas</th>
-                        <td>0.0</td>
-
-                    </tr>
+                   
 
                     <tr>
-                        <th rowspan="2">Humanas</th>
+                        <th scope="rowgroup" rowspan="2">Humanas</th>
                         <td>História</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
                         <tr>
                             <td>Geografia</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
                         </tr>
                     </tr>
 
                     <tr>
-                        <th class="thh" id="mh" colspan="5">Média de Humanas</th>
-                        <td>0.0</td>
+                        <th class="thh" scope="row" id="mh" colspan="4">Média de Humanas</th>
+                        <td class="media">0.0</td>
                     </tr>
 
                     
