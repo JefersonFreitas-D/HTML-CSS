@@ -13,11 +13,14 @@
 
     }
 
+
+
 body {
     background-color: rgba(0, 81, 255, 0.082);
     text-align: center;
     
 }
+
 
 table {
     width: 500px;
@@ -128,14 +131,14 @@ th.thh  {
 
         <tbody>
             <tr>
-                <th>Grupo</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
             </tr>
 
            
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -165,7 +168,7 @@ th.thh  {
             </tr>
 
             <tr>
-                <th rowspan="3">Homens</th>
+                <th scope="rowgroup" rowspan="3">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
@@ -174,7 +177,7 @@ th.thh  {
 </tr>
 
 <tr>
-    <td>Daniel lourenço</td>
+    <td>Daniel Lourenço</td>
     <td>Wall-E</td>
     <td>Oldboy</td>
     <td>Dangal</td>
