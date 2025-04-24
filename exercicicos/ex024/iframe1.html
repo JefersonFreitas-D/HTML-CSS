@@ -7,19 +7,59 @@
     
 </head>
 <style>
-   
-    iframe {
-        width: 400px;
-        height: 400px;
-        margin: 10px;
-        padding: 50px;
-        border-radius: 4px;
-        background-color: lightgray;
-       
+
+    body {
+        background-color: #2222FF }
+
+    p, h1 {
+        background-color: #1c00517c;
+        color: white;
+        text-align: center;
+        font-weight: bolder;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 9px darkgray;
+        text-align: justify;
+    }
+
+    h1 {
+        text-align: center;
+    }
+    a {
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        background-color: slateblue;
+        width: 100px;
+        margin: 10px auto;
+        padding: 5px;
+        border-radius: 5px;
         
     }
 
+    a:hover {
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+   
+    iframe {
+        width: 90vw;
+        height: 300px;
+        margin: 10px;
+        padding: 50px;
+        border-radius: 4px;
+        background-color: #4646eb;
+        display: block;
+        margin: auto;
+        border: 3px solid darkgrey; 
+        color: white;
+    }
 
+    
+
+   
 
 
 
@@ -30,13 +70,20 @@
 <body>
     <h1>Testando iframes</h1>
 
-    <p>Este é um exemplo de conteúdo dentro de um <iframe src="https://www.cursoemvideo.com" frameborder="0" width="250px" height="100px"></iframe> iframe do curso em video</p>
+    <a href="../Projeto-Android/Android.html" target="cordel">link2</a>
 
-    <h1>Iframe do youtube</h1>
+    <a href="../desafio012/desafio012.html " target="cordel">link</a>
 
-    <p>Assista aui o  <iframe src="../desafio012/desafio012.html" frameborder="0" allowfullscreen> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse facilis voluptates, ad nihil voluptas ipsa fugit eligendi quam illo fugiat provident hic pariatur tempora non vero ut, quibusdam cum accusamus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae doloremque, perferendis, voluptates, quam odit exercitationem ab voluptate rerum distinctio unde neque asperiores nemo dolore? Provident placeat hic voluptatibus facere autem!</p>
+
+    <iframe src="https://www.cursoemvideo.com" frameborder="0" width="250px" height="100px"></iframe> 
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolore soluta quibusdam esse debitis id a eaque, labore inventore, maiores atque odio, qui nulla enim dolor quae nostrum iusto dicta? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit cumque qui, aliquid quidem illo, provident accusantium placeat odio reprehenderit, expedita aliquam ex unde velit ullam quia! Porro, aliquam? Perspiciatis, distinctio?</p>
+
+   <iframe name="cordel" srcdoc="<p>Conteúdo do iframe</p>" frameborder="0" allowfullscreen> 
     
     </iframe> 
+
    
  
 </body>
