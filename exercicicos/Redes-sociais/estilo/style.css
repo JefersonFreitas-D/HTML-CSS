@@ -44,7 +44,7 @@ a:hover img{
     border: 2px solid rgba(255, 255, 255, 0.723);
     box-sizing: border-box;
     transform: translate(-3px, -3px );
-    box-shadow: 5px 5px 1opx black;
+    box-shadow: 5px 5px 10px black;
     
   
 }
