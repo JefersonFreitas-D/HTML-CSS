@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário2</title>
+</head>
+<style>
+#primeiro {
+    margin-bottom: 50px;
+}
+
+#campo {
+    padding: 10px;
+}
+</style>
+
+<body>
+  <h1>Segundo Formulário</h1> 
+  
+  <form id="primeiro" action="cadastro.php" method="post" autocomplete="on">
+
+    <fieldset>
+        <legend>Dados do usuário</legend>
+        <p>
+        
+        <label for="usuario">Usuário:</label>
+            <input type="text" name="usuario" id="usuario" required minlength="6" maxlength="10" size="10" placeholder="Usuário" autocomplete="username">
+            <p>
+                <label for="senha">Senha:</label>
+               <input type="password" name="senha" id="senha" required minlength="6" maxlength="10" size="10" placeholder="Senha" autocomplete="new-password">
+            </p>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Excluir">
+    </fieldset>
+
+  </form>
+
+
+  <form action="form.php">
+
+
+<fieldset id="campo">
+    <legend>Esportes</legend>
+    
+        <input type="checkbox" name="fut
+        " id="fut"><label for="fut">Futebol</label> <br>
+        <input type="checkbox" name="vol" id="vol"><label for="vol">Vôlei</label> <br>
+        <input type="checkbox" name="bas" id="bas"><label for="bas">Basquete</label> <br>
+        <input type="checkbox" name="futs" id="futs"><label for="futs">Futsal</label> <br>
+        <input type="checkbox" name="han" id="han"><label for="han">Handbol </label><br>
+</fieldset>
+
+<fieldset>
+    
+    <legend>Sexo</legend>
+        <input type="radio" name="sex" id="masc" checked value="M"><label for="masc">Masculino  <br></label>
+        <input type="radio" name="sex" id="fem" value="F" ><label for="fem">Feminino <br></label>
+
+
+</fieldset>
+
+
+    
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Excluir">
+
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </form>
+  
+</body>
+
+</html>
