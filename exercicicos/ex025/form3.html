@@ -20,10 +20,24 @@
   <p>
 
     <label for="nivel">Nível:</label>
-    <input type="range" name="nivel" id="nivel" min="1" max="10" value="1">
+    <input type="range" name="nivel" id="nivel" min="0" max="10" value="0" oninput="valor.innerHTML = Number (nivel.value)">
+    <output id="valor">10</output>
 
   </p>
 
+
+  <p>
+    <label for="ano">Ano de Nascimento: </label>
+    <input type="number" name="ano" id="ano" min="1900" max="2025" oninput="calcIdade()">
+
+  </p>
+
+<p>
+  
+  <label for="idade"> Sua idade é:</label>
+    <output name="idade" id="idade">0</output>
+
+</p>
 
   <p>
 
@@ -108,7 +122,16 @@
     
 </form>
 
+<script>
 
+function calcIdade() {
+
+  let atual = new Date().getFullYear()
+  idade.innerHTML = Number(atual) - Number(ano.value)
+
+}
+
+</script>
 
 
 
