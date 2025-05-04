@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário3</title>
+</head>
+
+<body>
+ 
+    <h1>Teste de cor</h1>
+    <form action="form.php" method="post">
+  <p>
+
+    <label for="cor">Cor:</label>
+    <input type="color" name="cor" id="cor" value="#0FF0FF">
+
+  </p> 
+  
+  <p>
+
+    <label for="nivel">Nível:</label>
+    <input type="range" name="nivel" id="nivel" min="1" max="10" value="1">
+
+  </p>
+
+
+  <p>
+
+    <label for="file">Arquivos:</label>
+    <input type="file" name="file" id="file">
+
+
+  </p>
+
+
+  <p>
+
+
+<label for="est">Estados:</label>
+<select name="estado" id="estado">
+    <optgroup label="Norte e Sul">
+
+        <option value="acre">Acre</option>
+
+        <option value="bahia">Bahia</option>
+
+        <option value="ceara" selected>Ceará</option>
+
+        <option value="distrito federal">Distrito Federal</option>
+
+        <option value="espirito santo">Espirito Santo</option>
+
+    </optgroup>
+
+ 
+    <optgroup label="Sul e Centro-Oeste">
+
+        <option value="minas">Minas Gerais</option>
+
+        <option value="rio">Rio de Janeiro</option>
+        <option value="santa">Santa Catarina</option>
+        <option value="rio grande">Rio Grande Do Sul</option>
+        
+    </optgroup>
+    
+</select>
+
+
+  </p>
+
+
+
+  <label for="profiss">Profissão:</label>
+  <input type="text" name="profiss" id="profiss" list="prof">
+
+  <datalist id="prof">
+ 
+<option value="ADV">Advogado</option>
+
+<option value="JU">Juíz</option>
+
+<option value="MED">Médico</option>
+
+<option value="MEC">Mecânico</option>
+
+
+  </datalist>
+
+  <p>
+
+    <label for="mens">Mensagem: <br></label>
+
+   <textarea name="mens" id="mens" cols="40" rows="10"></textarea>
+
+
+  </p>
+
+
+
+
+    <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Excluir">
+
+
+    </p>
+    
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
