@@ -6,9 +6,16 @@
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
 
+    #form > h1 {
+
+        margin-top: 20px;
+
+            }
+
 
     #login {
         width: 80vw;
+        height: 320px;
     }
 
     #login > #img {
@@ -30,21 +37,35 @@
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
 
+    #form > h1 {
+
+        margin-top: 14px;
+
+            }
+
     #login {
         width: 980px;
+        height: 340px;
     }
 
     #login > #img {
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
     }
 
     #login > #form {
-        float: right;
+        float: left;
         width: 50%;
+    }
+
+
+    #form > p {
+        font-size: 1.2em;
     }
 
 
     
 }
+
+
