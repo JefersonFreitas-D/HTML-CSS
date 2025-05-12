@@ -10,18 +10,45 @@
 
     .pai {
         background-color: rgb(158, 157, 157);
-        height: 100px;
+        height: 600px;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-end;
+
     }
 
     .filho {
         background-color: rgb(123, 79, 79);
+        border-radius: 10px;
+        width: 30px;
+        color: white;
         border: 1px solid black;
         text-align: center;
         padding: 14px;
-        flex: auto;
+    
       
+    }
+
+    #um {
+        align-self: flex-start;
+    }
+
+    #dois {
+        align-self: flex-end;
+    }
+
+    #tres {
+        align-self: center;
+        
+    }
+
+    #quatro {
+        align-self: auto;
+    }
+
+    #cinco {
+        align-self: stretch;
     }
 
 </style>
@@ -30,11 +57,11 @@
 
     <div class="pai">
 
-        <div class="filho">A</div>
-        <div class="filho">B</div>
-        <div class="filho">C</div>
-        <div class="filho">D</div>
-        <div class="filho">E</div>
+        <div id="um" class="filho">A</div>
+        <div id="dois" class="filho">B</div>
+        <div id="tres" class="filho">C</div>
+        <div id="quatro" class="filho">D</div>
+        <div id="cinco" class="filho">E</div>
         <div class="filho">F</div>
         <div class="filho">G</div>
         <div class="filho">H</div>

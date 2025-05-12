@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+</head>
+
+<style>
+
+    .pai {
+        background-color: rgb(158, 157, 157);
+        height: 500px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+       
+        
+   
+    }
+
+    .filho {
+        background-color: rgb(123, 79, 79);
+        border: 1px solid black;
+        text-align: center;
+        padding: 14px;
+       
+    }
+
+</style>
+
+<body>
+
+    <div class="pai">
+
+        <div style="order:1;" class="filho">A</div>
+        <div style="order:4;" class="filho">B</div>
+        <div style="order:-5;" class="filho">C</div>
+        <div style="order:3;" class="filho">D</div>
+        <div style="order: 6;" class="filho">E</div>
+        <div style="order:-2;" class="filho">F</div>
+        <div style="order:-7;" class="filho">G</div>
+        <div style="order:-9;" class="filho">H</div>
+        <div style="order:2;" class="filho">I</div>
+        <div style="order:10;" class="filho">J</div>
+        <div style="order:-1;" class="filho">K</div>
+        <div style="order:0;" class="filho">L</div>
+        <div style="order:-3;" class="filho">M</div>
+        <div style="order:-6;" class="filho">N</div>
+        <div style="order:4;" class="filho">O</div>
+
+
+    </div>
+    
+</body>
+
+</html>
