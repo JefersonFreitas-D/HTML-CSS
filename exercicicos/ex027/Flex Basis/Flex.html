@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+</head>
+
+<style>
+
+    .pai {
+        background-color: rgb(230, 230, 230);
+        display: flex;
+        flex-flow: row nowrap;
+        height: 400px;
+        justify-content: center;
+        align-content:center;
+        
+        
+    }
+
+    .filho {
+        padding: 30PX;
+        background-color: rgb(123, 79, 79);
+        border: 1px solid black;
+        border-radius: 10px;
+        text-align: center;
+        flex-basis: 200px;
+       
+    }
+
+    #um {
+        flex-basis: 100px;
+    }
+
+</style>
+
+<body>
+
+    <div class="pai">
+
+        <div id="um" class="filho">A</div>
+        <div class="filho">B</div>
+        <div class="filho">C</div>
+
+        
+
+    </div>
+    
+</body>
+
+</html>
