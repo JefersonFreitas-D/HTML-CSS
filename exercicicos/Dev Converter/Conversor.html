@@ -6,7 +6,54 @@
     <title>Dev Converter</title>
 </head><link rel="stylesheet" href="css/estilo.css">
 <link rel="stylesheet" href="js/javascript.js">
+
 <body>
+
+        <header>
+
+            <h1>$Dev Converter$</h1>
+
+        </header>
     
+    <main>
+
+
+        <form id="conver">
+
+            <section class="input-section">
+             
+                <div class="forms">
+                    <label for="valor">Valor a ser convertido:</label>
+                    <input type="number" id="valor" name="valor" placeholder="Digite o valor" required>
+                </div>
+
+                <div class="forms">
+                    <label for="moeda">Selecione a moeda:</label>
+                    <select id="moeda" name="moeda" required>
+                        <option value="" disabled selected>Selecione uma moeda</option>
+                        <option value="dolar">Dólar</option>
+                        <option value="euro">Euro</option>
+                        <option value="libra">Libra Esterlina</option>
+                        <option value="iene">Iene Japonês</option>
+                    </select>
+
+                </div>
+
+            </section>
+
+            <button onclick="converter()" type="submit">Converter</button>
+
+        </form>
+         <h2 id="result"></h2>
+    </main>
+
+        <footer>
+            <span>
+                &copy; 2025 Dev Converter. Todos os direitos reservados.
+            </span>
+        </footer>
 </body>
+
+<script src="js/javascript.js"></script>
+
 </html>
