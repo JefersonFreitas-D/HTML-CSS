@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
+
+
+:root {
+
+    --cor1:;
+    --cor2:;
+    --cor3:;
+    --fonte:;
+}
+
+body{
+width: 100%;
+height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 300px;
+    background: url(/exercicicos/Testes/imagens/fundo.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1, h2{
+    
+}
+
+.serv {
+   display: grid;
+   
+   
+   
+}
+
+.serv img {
+   width: 200px;
+   height: 100%;
+
+}
+
+.resu{
+    display: grid;
+}
+
+.resu img {
+ width: 200px;
+   height: 100%;
+}
