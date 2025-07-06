@@ -12,7 +12,7 @@
 
 :root {
 
-    --cor1:;
+    --cor1: #FFB6BF;;
     --cor2:;
     --cor3:;
     --fonte:;
@@ -21,37 +21,51 @@
 body{
 width: 100%;
 height: 100vh;
+background-color: #ffe4e7;
+}
+main{
+  
 }
 
 header {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     width: 100%;
-    height: 60%;
+    height: 50%;
+    margin: auto;
     background: url(/exercicicos/Testes/imagens/fundo.jpg) no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+    
+    
 }
 
 .menu{
     width: 80%;
     height: 75%;
-    margin: auto;
+    margin: auto -3% auto auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    
 }
 
-
+ul{
+    margin:0px 0px 40px 0px
+}
 
 li  {
+    
     height: 100%;
-    width: 250px;
+    width: 180px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.33);
-    margin:40px 5px 8px 0px;
+    margin:35px 5px 8px 0px;
     padding: 5px;
     border-radius: 5px;
 
@@ -82,6 +96,16 @@ h1{
 
 }
 
+h2 {
+    background-color: rgb(250, 215, 242);
+    padding: 5px;
+    text-align: center;
+    width: 55%;
+    margin:0.6% 0px -0.6% 2.2%;
+    border-radius: 3px;
+    
+   
+}
 
 
 .hea {
@@ -103,47 +127,108 @@ i{
     padding-right: 2px;
 }
 
-.prod{
-    margin-top: 20%;
-}
-
-
 
 .serv {
-  background-color: #FFB6BF;
-  margin-top: 20%;
+  width: 600px;
+  margin: -38px 0px 3% 60%;
   display: grid;
-  grid-template-rows:repeat(3, 1fr);
-  grid-template-columns:repeat(2, 1fr);
-  gap: 30px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns:auto auto auto ;
+  gap: 12px;
+
  
+}
+
+.alon {
+    grid-area:1/1/2/4;
+}
+
+.micro{
+    grid-area:2/1/3/-2;
+}
+
+.desi{
+    grid-area:2/3/3/4;
+}
+
+.depi{
+    grid-area:3/-4/4/-2;
+}
+
+.exte{
+    grid-area:3/-2;
 }
 
 
 
 .serv img {
     
-   width: 300px;
-   height: 300px;; 
+   width: 100%;
+   height: 400px; 
 
 }
 
 .legenda {
-   background-color: rgba(4, 4, 4, 0.056);
+    display: inline-block;
+   background-color: rgba(4, 4, 4, 0.234);
+   text-align: center;
+   margin: auto;
+   padding: 5px;
+   border-radius: 5px;
+   width: 100%;
    
 }
 
-.resu{
-margin-top:20%;
-display: grid;
-grid-template-rows:auto auto;
-grid-template-columns: 300px 300px 300px;
-gap: 30px;
-display: grid;
+
+
+aside > article > p{
+    height: 200px;
+    background-color: #fcb2bba6;
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    margin:0px 0px 0.9px 0px;
+    
+  
+}
+       
+   
+
+footer{
+      background-color: var(--cor1);
+      display: inline-block;
+      width: 100%;
+      padding: 5px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      text-shadow: 2px 3px 6px black;
+    
 }
 
-.resu img {
-width: 100%;
-height: 100%;
+.produtos{
+    margin: 0px 0px 100px 0px;
+}
 
+.curso {
+    width: 100%;
+    background-color: #FFB6BF;
+    margin: 0px 0px 0.9px 0px;
+    color: whitesmoke;
+    text-shadow: 3px 4px 9px rgba(0, 0, 0, 0.721);
+    border-radius: 8px 8px 0px 0px;
+   
+}
+
+@media  screen and (max-width:900px) {
+
+    .serv {
+  width: 56%;
+  margin: -38px 0px 3% 43%;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns:auto auto auto ;
+  gap: 12px;
+    }
+    
 }
