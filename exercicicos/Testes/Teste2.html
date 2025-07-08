@@ -7,13 +7,13 @@
 </head>
 
 <body>
-    <form id="form" action="login" method="get">
+    <form id="form" method="get">
 
         <label for="user">Usuário:</label>
-        <input minlength="3" maxlength="15" required="text" name="user" id="user">
+        <input minlength="3" maxlength="15"  type="text" name="user" id="user">
 
         <label for="senha">Senha:</label>
-        <input minlength="6" maxlength="20" required   type="password" name="senha" id="senha">
+        <input minlength="6" maxlength="20"   type="password" name="senha" id="senha">
 
         <button id="send" onclick="clicar()" type="submit">Enviar</button>
 
@@ -23,5 +23,6 @@
 
     </form>
 </body>
+<script src="script.js"></script>
 
 </html>
