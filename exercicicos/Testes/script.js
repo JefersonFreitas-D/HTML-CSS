@@ -8,7 +8,9 @@ const enviar = (event) => {
 
 }
 
+
 form.addEventListener('submit', enviar)
+
 
 function clicar() {
     if (usuario.value === '' || senha.value === '' ) {
@@ -17,7 +19,7 @@ function clicar() {
 
         
     } else {
-      window.open('/exercicicos/Testes/-Copia.html', '_blank')
+    window.location.href = '/exercicicos/Testes/copia/teste.html'
     }
 
   
