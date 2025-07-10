@@ -4,25 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste 2</title>
-</head>
+</head><link rel="stylesheet" href="style.css">
 
 <body>
-    <form id="form" method="get">
-
-        <label for="user">Usuário:</label>
-        <input minlength="3" maxlength="15"  type="text" name="user" id="user">
-
-        <label for="senha">Senha:</label>
-        <input minlength="6" maxlength="20"   type="password" name="senha" id="senha">
-
-        <button id="send" onclick="clicar()" type="submit">Enviar</button>
-
-
-
-
-
-    </form>
-</body>
+    <section id="login">
+        <form id="form" method="get">
+            <label for="user">Usuário:</label>
+            <div><input class="usu" minlength="3" placeholder="Digite seu nome" maxlength="15"  type="text" name="user" id="user"></div>
+            <label for="senha">Senha:</label>
+            <div><input class="pass" minlength="6" maxlength="20" placeholder="Digite sua senha"  type="password" name="senha" id="senha"></div>
+            <div><button id="send" onclick="clicar()" type="submit">Enviar</button></div>
+        </form>
+    </section> 
+</body> 
 <script src="script.js"></script>
 
 </html>

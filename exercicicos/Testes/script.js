@@ -17,7 +17,7 @@ function clicar() {
 
         
     } else {
-      window.
+      window.open('/exercicicos/Testes/-Copia.html', '_blank')
     }
 
   
