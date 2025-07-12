@@ -337,6 +337,7 @@ footer, span{
         background-color: blue;
         padding: 10px;
         display: flex;
+        flex-direction: column;
         overflow-y: auto;
         width: 100%;
         max-height: 100%;
@@ -367,8 +368,8 @@ footer, span{
      
 
     .aside .img{
-       margin: 2px auto auto 5px;
-       width:300px;
+       margin: 10px auto auto auto;
+       width:100%;
        height: auto; 
 }
 
@@ -540,6 +541,7 @@ footer, span{
         background-color: blue;
         padding: 10px;
         display: flex;
+        flex-direction: column;
         overflow-y: auto;
         width: 100%;
         max-height: 100%;
@@ -570,8 +572,8 @@ footer, span{
      
 
     .aside .img{
-        margin: 2px auto auto 5px;
-       width: 350px;
+        margin: 10px auto auto auto;
+       width: 100%;
        height: auto; 
 }
 
@@ -746,6 +748,7 @@ footer, span{
         background-color: blue;
         padding: 10px;
         display: flex;
+        flex-direction: column;
         overflow-y: auto;
         width: 100%;
         max-height: 100%;
@@ -776,8 +779,8 @@ footer, span{
      
 
     .aside .img{
-      margin: 2px auto auto 5px;
-       width: 450px;
+      margin: 8px auto auto auto;
+       width: 100%;
        height: auto; 
 }
 
