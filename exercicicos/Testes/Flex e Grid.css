@@ -12,15 +12,11 @@
 
     .img{
         max-width: 100%;
-        height: 100%;
+        height: auto;
         
     }
 
-    .p{
-        max-width: 100%;
-        height: 100%;
-
-    }
+    
 
     body{
         background-color: beige;
@@ -79,20 +75,30 @@
         align-items: center;
         display: flex;
         
+        
     }
 
     .texto{
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        overflow-y: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         background-color: blueviolet;
         width: 100%;
-        height: 98%;
+        height: 100%;
         padding: 10px;
         margin: 5px 2px auto 2px;
     }
 
+       
     .grid{
         width: 100%;
-        height: 98%;
-        background-color: brown;
+        height: 100%;
+        overflow-y: auto;
+        background-color: rgb(177, 25, 121);
         display: grid;
         grid-template-rows:repeat(3,auto) ;
         grid-template-columns:repeat(4, 1fr) ;
@@ -117,20 +123,89 @@
     }
 
     aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         background-color: cyan;
         padding: 10px;
         margin: 0px auto 3px auto;
         width: 98%;
+        height: 100%;
+        text-align: justify;
     }
+
+
+    .aside{
+        background-color: blue;
+        padding: 10px;
+        display: flex;
+        overflow-y: auto;
+        width: 100%;
+        max-height: 100%;
+        min-width: 300px;
+        
+        
+    }
+
+   h2{
+        background-color: bisque;
+        text-align: center;
+        margin: auto auto 2px auto;
+    }
+
+    h2.text{
+        width: 100%;
+        margin: auto auto 2px auto;
+    }
+    
+    h3{
+        background-color: rgb(9, 61, 106);
+        width: 100%;
+        padding: 5px;
+        color: aliceblue;
+        text-align: center;
+        margin: auto auto 2px auto;
+    }
+     
+
+    .aside .img{
+        margin: 2px auto auto 5px;
+       width: 250px;
+       height: 844px; 
 }
 
-footer{
-    background-color: crimson;
+   .p{
+    padding: 5px;
+    height: max-content;
+    background-color: darkgreen;
+    max-width: 100%;
+    margin: 2px auto auto auto;
+    color: rgb(17, 17, 17);
+    text-align: justify;
+}
+
+.pa{
+    background-color: coral;
+    height: max-content;
+    padding: 5px 5px 25px 5px;
+    margin: 2px auto auto auto;
+    
+}
+
+footer, span{
+    background-color: rgb(4, 4, 4);
     width: 100%;
     padding: 5px;
     text-align: center;
     color: wheat;
 }
+
+
+
+
+}
+
 
      /*TABLET*/
 
@@ -139,6 +214,12 @@ footer{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
+
+     .img{
+        max-width: 100%;
+        height: auto;
+        
     }
 
     body{
@@ -203,23 +284,24 @@ footer{
 
     .texto{
         background-color: blueviolet;
+        overflow-y: auto;
         width: 100%;
-        height: 98%;
+        height: 100%;
         padding: 10px;
          margin: 5px 2px auto 2px;
     }
 
     .grid{
         width: 100%;
-        height: 98%;
-        background-color: brown;
+        height: 100%;
+        overflow-y: auto;
+        background-color: rgb(177, 25, 121);
         display: grid;
         grid-template-rows:repeat(3,auto) ;
         grid-template-columns:repeat(4, 1fr) ;
         gap: 4px 4px;
-        margin: auto 3px auto ;
+        margin: px auto 3px auto ;
         padding-top: 40px;
-       
     }
 
     .g1{
@@ -237,21 +319,86 @@ footer{
         grid-area: 2/3/3/5;
     }
 
-    aside{
+   aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         background-color: cyan;
         padding: 10px;
         margin: 0px auto 3px auto;
         width: 98%;
+        height: 100%;
+        text-align: justify;
     }
+
+
+    .aside{
+        background-color: blue;
+        padding: 10px;
+        display: flex;
+        overflow-y: auto;
+        width: 100%;
+        max-height: 100%;
+        min-width: 300px;
+        
+        
+    }
+
+   h2{
+        background-color: bisque;
+        text-align: center;
+        margin: auto auto 2px auto;
+    }
+
+    h2.text{
+        width: 100%;
+        margin: auto auto 2px auto;
+    }
+    
+    h3{
+        background-color: rgb(9, 61, 106);
+        width: 100%;
+        padding: 5px;
+        color: aliceblue;
+        text-align: center;
+        margin: auto auto 2px auto;
+    }
+     
+
+    .aside .img{
+       margin: 2px auto auto 5px;
+       width:300px;
+       height: auto; 
 }
 
-footer{
-    background-color: crimson;
+ .p{
+    padding: 5px;
+    height: max-content;
+    background-color: darkgreen;
+    max-width: 100%;
+    margin: 2px auto auto auto;
+    color: rgb(17, 17, 17);
+    text-align: justify;
+}
+
+.pa{
+    background-color: coral;
+    height: max-content;
+    padding: 5px 5px 25px 5px;
+    margin: 2px auto auto auto;
+    
+} 
+
+    footer, span{
+    background-color: rgb(11, 11, 11);
     width: 100%;
     padding: 5px;
     text-align: center;
     color: wheat;
 }
+}
+
 
        /*DESKTOPS*/
 
@@ -263,6 +410,12 @@ footer{
         box-sizing: border-box;
     }
 
+     .img{
+        max-width: 100%;
+        height: auto;
+        
+    }
+
     body{
         background-color: beige;
         width: 100%;
@@ -322,27 +475,36 @@ footer{
         align-items: center;
         display: flex;
         
+        
     }
 
     .texto{
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        overflow-y: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         background-color: blueviolet;
         width: 100%;
-        height: 98%;
+        height: 100%;
         padding: 10px;
-         margin: 5px 2px auto 2px;
+        margin: 5px 2px auto 2px;
     }
 
+       
     .grid{
-        width: 98%;
-        height: 98%;
-        background-color: brown;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        background-color: rgb(177, 25, 121);
         display: grid;
         grid-template-rows:repeat(3,auto) ;
         grid-template-columns:repeat(4, 1fr) ;
         gap: 4px 4px;
         margin: px auto 3px auto ;
         padding-top: 40px;
-       
     }
 
     .g1{
@@ -360,21 +522,87 @@ footer{
         grid-area: 2/3/3/5;
     }
 
-    aside{
+ aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         background-color: cyan;
         padding: 10px;
         margin: 0px auto 3px auto;
         width: 98%;
+        height: 100%;
+        text-align: justify;
     }
+
+
+    .aside{
+        background-color: blue;
+        padding: 10px;
+        display: flex;
+        overflow-y: auto;
+        width: 100%;
+        max-height: 100%;
+        min-width: 300px;
+        
+        
+    }
+
+   h2{
+        background-color: bisque;
+        text-align: center;
+        margin: auto auto 2px auto;
+    }
+
+    h2.text{
+        width: 100%;
+        margin: auto auto 2px auto;
+    }
+    
+    h3{
+        background-color: rgb(9, 61, 106);
+        width: 100%;
+        padding: 5px;
+        color: aliceblue;
+        text-align: center;
+        margin: auto auto 2px auto;
+    }
+     
+
+    .aside .img{
+        margin: 2px auto auto 5px;
+       width: 350px;
+       height: auto; 
 }
 
-footer{
-    background-color: crimson;
+  .p{
+    padding: 5px;
+    height: max-content;
+    background-color: darkgreen;
+    max-width: 100%;
+    margin: 2px auto auto auto;
+    color: rgb(17, 17, 17);
+    text-align: justify;
+}
+
+.pa{
+    background-color: coral;
+    height: max-content;
+    padding: 5px 5px 25px 5px;
+    margin: 2px auto auto auto;
+    
+}
+
+    footer,span{
+    background-color: rgb(44, 2, 11);
     width: 100%;
     padding: 5px;
     text-align: center;
     color: wheat;
 }
+}
+
+
     
     /*GRANDES TELAS*/
 
@@ -387,6 +615,13 @@ footer{
         box-sizing: border-box;
     }
 
+     .img{
+        max-width: 100%;
+        height: auto;
+        
+    }
+
+
     body{
         background-color: beige;
         width: 100%;
@@ -446,27 +681,36 @@ footer{
         align-items: center;
         display: flex;
         
+        
     }
 
     .texto{
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        overflow-y: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         background-color: blueviolet;
         width: 100%;
-        height: 98%;
+        height: 100%;
         padding: 10px;
-         margin:5px 2px auto 2px;
+        margin: 5px 2px auto 2px;
     }
 
+       
     .grid{
-        width: 98%;
-        height: 98%;
-        background-color: brown;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        background-color: rgb(177, 25, 121);
         display: grid;
         grid-template-rows:repeat(3,auto) ;
         grid-template-columns:repeat(4, 1fr) ;
         gap: 4px 4px;
         margin: px auto 3px auto ;
         padding-top: 40px;
-       
     }
 
     .g1{
@@ -484,21 +728,87 @@ footer{
         grid-area: 2/3/3/5;
     }
 
-    aside{
+   aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         background-color: cyan;
         padding: 10px;
         margin: 0px auto 3px auto;
         width: 98%;
+        height: 100%;
+        text-align: justify;
     }
+
+
+    .aside{
+        background-color: blue;
+        padding: 10px;
+        display: flex;
+        overflow-y: auto;
+        width: 100%;
+        max-height: 100%;
+        min-width: 300px;
+        
+        
+    }
+
+   h2{
+        background-color: bisque;
+        text-align: center;
+        margin: auto auto 2px auto;
+    }
+
+    h2.text{
+        width: 100%;
+        margin: auto auto 2px auto;
+    }
+    
+    h3{
+        background-color: rgb(9, 61, 106);
+        width: 100%;
+        padding: 5px;
+        color: aliceblue;
+        text-align: center;
+        margin: auto auto 2px auto;
+    }
+     
+
+    .aside .img{
+      margin: 2px auto auto 5px;
+       width: 450px;
+       height: auto; 
 }
 
-footer{
-    background-color: crimson;
+   .p{
+    padding: 5px;
+    height: max-content;
+    background-color: darkgreen;
+    max-width: 100%;
+    margin: 2px auto auto auto;
+    color: rgb(17, 17, 17);
+    text-align: justify;
+}
+
+.pa{
+    background-color: coral;
+    height: max-content;
+    padding: 5px 5px 25px 5px;
+    margin: 2px auto auto auto;
+    
+}
+
+    footer,span{
+    background-color: rgb(4, 4, 4);
     width: 100%;
     padding: 5px;
     text-align: center;
     color: wheat;
 }
+}
+
+
     
 
        
