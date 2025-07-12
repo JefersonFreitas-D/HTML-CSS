@@ -63,9 +63,10 @@
     }
 
     a {
+        display: inline-block;
         background-color: pink;
         text-decoration: none;
-        width: 100px;
+        width: 100%;
        
     }
 
@@ -184,7 +185,7 @@ footer{
         display: inline-block;
         background-color: pink;
         text-decoration: none;
-        width: 100px;
+        width: 100%;
         padding: 2px;
        
     }
@@ -306,7 +307,7 @@ footer{
         display: inline-block;
         background-color: pink;
         text-decoration: none;
-        width: 100px;
+        width: 100%;
         padding: 2px;
        
     }
@@ -430,7 +431,7 @@ footer{
         display: inline-block;
         background-color: pink;
         text-decoration: none;
-        width: 100px;
+        width: 100%;
         padding: 2px;
        
     }
