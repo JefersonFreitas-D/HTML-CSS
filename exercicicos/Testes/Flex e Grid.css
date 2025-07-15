@@ -125,7 +125,7 @@
         background-size: cover;
         background-position: center;
         display: grid;
-        grid-template-rows:repeat(3,auto) ;
+        grid-template-rows:repeat(3,1fr) ;
         grid-template-columns:repeat(4, 1fr) ;
         gap: 4px 4px;
         margin: 9px auto 3px auto ;
@@ -364,7 +364,7 @@ footer, span{
         background-size: cover;
         background-position: center right;
         display: grid;
-        grid-template-rows:repeat(3,auto) ;
+        grid-template-rows:repeat(3,1fr) ;
         grid-template-columns:repeat(4, 1fr) ;
         gap: 4px 4px;
         margin: 2px auto 2px auto ;
@@ -621,7 +621,7 @@ footer, span{
         background-size: cover;
         background-position: center top;
         display: grid;
-        grid-template-rows:repeat(3,auto) ;
+        grid-template-rows:repeat(3,1fr) ;
         grid-template-columns:repeat(4, 1fr) ;
         gap: 4px 4px;
         margin: 11px auto 3px auto ;
@@ -877,7 +877,7 @@ footer, span{
         background-size: cover;
         background-position: center left;
         display: grid;
-        grid-template-rows:repeat(3,auto) ;
+        grid-template-rows:repeat(3,1fr) ;
         grid-template-columns:repeat(4, 1fr) ;
         gap: 4px 4px;
         margin: 11px auto 3px auto ;

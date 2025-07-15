@@ -12,7 +12,7 @@ body{
     height: 100vh;
     margin: auto;
     display: grid;
-    grid-template-rows: 100px 50px 350px 350px 100px;
+    grid-template-rows: 1fr 0.5fr 3.5fr 3.5fr 1fr;
     grid-template-columns:1.5fr 0.5fr 1fr 1fr 1fr ;
     gap: 4px;
 
@@ -26,7 +26,7 @@ body{
 }
 
 #header{
-     background-image: url(/exercicicos/imagens/back-phone.jpg);
+     
     display: flex;
     padding: 1.2%;
     flex-direction: column;
@@ -45,8 +45,8 @@ body{
 }
 
 #nav{
- background-image: url(/exercicicos/imagens/back-tablet.jpg);  
-background-color: bisque;
+   
+
 grid-area: nav;
 width: 100%;
 height: max-content;
@@ -85,7 +85,7 @@ border: 3px solid rgb(32, 253, 32);
 }
 
 #main{
-     background-image: url(/exercicicos/imagens/back-pc.jpg);
+    
     background-color: green;
     grid-area: main;
     width: 100%;
@@ -97,7 +97,7 @@ border: 3px solid rgb(32, 253, 32);
 }
 
 #section{
-     background-image: url(/exercicicos/imagens/back-print.jpg);
+    
     background-color: brown;
     grid-area: section;
     width: 100%;
@@ -110,7 +110,7 @@ border: 3px solid rgb(32, 253, 32);
 }
 
 #aside{
-     background-image: url(/exercicicos/imagens/back-tv.jpg);
+   
     grid-area: aside;
     width: 100%;
     overflow-y: auto;
@@ -122,7 +122,7 @@ border: 3px solid rgb(32, 253, 32);
 
 #footer{
     display: inline-block;
-     background-image: url(/exercicicos/imagens/back-phone.jpg);
+     
     background-color: blueviolet;
     grid-area: footer;
     width: 100%;

@@ -10,8 +10,9 @@ body{
     display: grid;
     width: 99%;
     height: 100vh;
+    overflow:auto;
     gap: 6px;
-    grid-template-rows: 100px 200px 170px 300px 20px ;
+    grid-template-rows: 1fr 2fr 1.7fr 3fr 0.2fr;
     grid-template-columns: repeat(3, 1fr);
 
     grid-template-areas: 
@@ -25,33 +26,47 @@ body{
 #nav{
     background-color: red;
     grid-area: nav;
+    padding:5px;
+    text-align:justify;
 }
 
 #header{
     background-color: green;
     grid-area: header;
+    padding:5px;
+    text-align:justify;
 }
 
 #main{
     background-color: blue;
     grid-area: main;
+    padding:5px;
+    text-align:justify;
+
 }
 
 .article1{
     background-color: aquamarine;
     grid-area: article1;
+    padding: 5px;
+    text-align:justify;
 }
 
 .article2{
     background-color: rgb(170, 18, 107);
     grid-area: article2;
+    padding:5px;
 }
 
 .article3{
     background-color: rgb(188, 209, 49);
     grid-area: article3;
+    padding:5px;
+    text-align:justify;
 }
 #footer{
     background-color: brown;
     grid-area: footer;
+    padding:5px;
+    text-align:center;
 }
