@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: white;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabeca{
+   background-color: rgba(68, 65, 65, 0.415);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav{
+   background-color: rgba(68, 65, 65, 0.415);
+    width: 99%;
+    height: 58px;
+    
+}
+
+#nav ul{
+    width: 97%;
+    height: 41px;
+    margin: 0.5% auto auto auto;
+   background-color: rgba(68, 65, 65, 0.415);
+    display: flex;
+}
+
+#nav li{
+    width: 95%;
+    height: 30px;
+   text-align: center;
+    list-style: none;
+    background-color: rgba(68, 65, 65, 0.415);
+}
+
+#nav a{
+   
+   display: inline-block;
+    color: white;
+    padding: 5px;
+ background-color: rgba(40, 38, 38, 0.96);
+    text-decoration: none;
+}
+
+#main{
+    width: 99%;
+    height: 100%;
+    gap: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   background-color: rgba(68, 65, 65, 0.415);
+}
+
+#box1{
+    background-color: rgba(68, 65, 65, 0.415);
+    width: 80%;
+    height: 98%;
+    margin: auto auto auto 1.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#box2{
+    background-color: rgba(68, 65, 65, 0.415);
+    width: 19%;
+    height: 98%;
+    flex-wrap: wrap;
+    margin:auto 1.5% auto auto ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#play{
+    width: 100%;
+    height: 40%;
+    margin: 0 auto;
+   background-color: rgba(68, 65, 65, 0.415);
+}
+
+#links{
+background-color: rgba(68, 65, 65, 0.415);
+ width: 100%;
+height: 8%;
+margin: 1% auto 0.7% auto;
+padding: 5px;
+display: flex;
+justify-content: space-between;
+gap: 1%;
+
+}
+
+.link{
+width: 30%;
+border-radius: 2%;
+background-color: rgba(35, 33, 33, 0.415);
+}
+
+#texto{
+    width: 100%;
+    height: 50%;
+    margin: auto auto 0.5% auto;
+    padding: 5px;
+    overflow-y: auto;
+  background-color: rgba(68, 65, 65, 0.415);
+  color: white;
+    text-align: justify;
+}
+
+#roda{
+    width: 100%;
+    height: 5%;
+    padding: 5px;
+    overflow-y: auto;
+   background-color: rgba(68, 65, 65, 0.415);
+   text-align: center;
+    color: white;
+}
+
+#aside{
+    width: 100%;
+    height: 80%;
+    margin: auto auto 0% auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+    background-color: rgba(68, 65, 65, 0.415);
+    color: white;
+}
+
+#midia{
+    width: 100%;
+    height: 100%;
+   
+    overflow-y: auto;
+    padding: 5px;
+    background-color: rgba(68, 65, 65, 0.415);
+}
+
+#rodape{
+    width: 100%;
+    height: 6%;
+    margin: 1.5% auto 1.5% auto;
+    padding: 5px;
+    background-color: rgb(25, 25, 25);
+}
+
+#div{
+   background-color: rgba(68, 65, 65, 0.415);
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: space-between;
+}
+
+#secao1{
+    
+    width: 100%;
+    height: 100%;
+  
+}
+#secao2{
+  background-color: rgba(68, 65, 65, 0.415);
+    margin: 1% auto auto auto;
+    height: 97%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#img{
+    width: 80%;
+    height: 98%;
+    margin: 2% 73% auto auto;
+    padding: 5px;
+background-color: rgba(68, 65, 65, 0.415);
+color: white;
+}
+
+#paragrafo{ 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(68, 65, 65, 0.415);
+    color: white;
+    margin: 1% auto auto auto; 
+    padding: 5px;
+
+}
+
+#botao{
+    width: 50%;
+    height: 15%;
+    border-radius: 3px;
+    margin:1% auto auto 0;
+    text-align: center;
+    background-color: rgba(17, 17, 17, 0.727);
+    color: white;
+}
+
+
+
+
