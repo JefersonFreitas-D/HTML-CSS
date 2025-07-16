@@ -28,6 +28,12 @@ body{
    
 }
 
+#nav li, a{
+    text-decoration: none;
+    list-style: none;
+
+}
+
 #section1{
      background-color: rgba(68, 65, 65, 0.415);
 grid-area:2/1/2/3;
