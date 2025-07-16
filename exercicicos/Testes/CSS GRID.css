@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: rgba(0, 0, 0, 0.674);
+    background-color: rgb(249, 247, 247);
     width: 99%;
     height: 100vh;
     margin: auto;
@@ -30,7 +30,7 @@ body{
     display: flex;
     padding: 1.2%;
     flex-direction: column;
-    background-color: red;
+   background-color: rgba(68, 65, 65, 0.415);
     grid-area: header;
     border: 3px solid red;
 }
@@ -55,6 +55,7 @@ border: 3px solid rgb(32, 253, 32);
 }
 
 #nav ul{
+     background-color: rgba(68, 65, 65, 0.415);
     display: flex;
     width: 100%;
     color: wheat;
@@ -86,7 +87,7 @@ border: 3px solid rgb(32, 253, 32);
 
 #main{
     
-    background-color: green;
+    background-color: rgba(68, 65, 65, 0.415);
     grid-area: main;
     width: 100%;
    overflow-y: auto;
@@ -98,7 +99,7 @@ border: 3px solid rgb(32, 253, 32);
 
 #section{
     
-    background-color: brown;
+   background-color: rgba(68, 65, 65, 0.415);
     grid-area: section;
     width: 100%;
   overflow-y: auto;
@@ -110,7 +111,7 @@ border: 3px solid rgb(32, 253, 32);
 }
 
 #aside{
-   
+    background-color: rgba(68, 65, 65, 0.415);
     grid-area: aside;
     width: 100%;
     overflow-y: auto;
@@ -123,7 +124,7 @@ border: 3px solid rgb(32, 253, 32);
 #footer{
     display: inline-block;
      
-    background-color: blueviolet;
+   background-color: rgba(68, 65, 65, 0.415);
     grid-area: footer;
     width: 100%;
     height: max-content;
