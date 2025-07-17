@@ -28,6 +28,7 @@ body{
 #header{
      
     display: flex;
+    max-height: 100%;
     padding: 1.2%;
     flex-direction: column;
    background-color: rgba(68, 65, 65, 0.415);
@@ -37,7 +38,7 @@ body{
 
 #header p{
 
-   height: 100%;
+   max-height: 100%;
    overflow-y: auto;
    text-align: justify;
    color: rgba(246, 244, 244, 0.833);
@@ -49,7 +50,7 @@ body{
 
 grid-area: nav;
 width: 100%;
-height: max-content;
+max-height: 100%;
 padding: 5px;
 border: 3px solid rgb(32, 253, 32);
 }
@@ -87,26 +88,29 @@ border: 3px solid rgb(32, 253, 32);
 
 #main{
     
-    background-color: rgba(68, 65, 65, 0.415);
+    background-color: rgba(234, 18, 18, 0.415);
     grid-area: main;
     width: 100%;
-   overflow-y: auto;
+    height: max-content;
+     background-color: rgba(68, 65, 65, 0.262);
    border: 3px solid gold;
    padding: 5px;
    text-align: justify;
-   color: rgba(255, 255, 255, 0.699);
+   color: rgba(253, 250, 250, 0.699);
 }
+
 
 #section{
     
    background-color: rgba(68, 65, 65, 0.415);
     grid-area: section;
     width: 100%;
-  overflow-y: auto;
+    max-height: 100%;
+ 
   border: 3px solid yellowgreen;
   padding: 5px;
   text-align: justify;
-  color: rgba(53, 51, 51, 0.76);
+  color: rgba(51, 53, 52, 0.76);
   font-weight: bold;
 }
 
@@ -114,11 +118,21 @@ border: 3px solid rgb(32, 253, 32);
     background-color: rgba(68, 65, 65, 0.415);
     grid-area: aside;
     width: 100%;
-    overflow-y: auto;
+    height: max-content;
     border: 3px solid salmon;
     padding: 5px;
     text-align: justify;
-    color: rgba(255, 255, 255, 0.755);
+    color: rgba(249, 252, 250, 0.755);
+}
+
+#artigo p{
+    height:max-content ;
+      background-color: rgba(68, 65, 65, 0.415);
+}
+
+#artigo2 p{
+    height: max-content;
+    background-color: rgba(68, 65, 65, 0.415);
 }
 
 #footer{
@@ -127,12 +141,31 @@ border: 3px solid rgb(32, 253, 32);
    background-color: rgba(68, 65, 65, 0.415);
     grid-area: footer;
     width: 100%;
-    height: max-content;
-    overflow-y: auto;
+   max-height: 100%;
     text-align: center;
-    color: white;
+    color: rgb(227, 15, 15);
     margin: auto;
    padding: 5px;
     border: 3px solid rgb(235, 20, 56);
     
+}
+
+p{
+    width: 100%;
+    height: max-content;
+}
+
+#sec1{
+    background-color: rgba(68, 65, 65, 0.415);
+    width: 100%;
+  
+}
+
+#main #p1{
+       background-color: rgba(68, 65, 65, 0.415);
+    width: 100%;
+max-height: 100%;
+    padding: 2%;
+    margin: auto;
+ 
 }
