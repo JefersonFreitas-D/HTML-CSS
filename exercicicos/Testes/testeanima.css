@@ -38,6 +38,24 @@
     margin-top: 30px;
 }
 
+.btn2{
+    background-color: rgba(128, 128, 128, 0.697);
+    color: white;
+    padding: 5px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.btn2:hover{
+    background-color: darkgray;
+    transform: scale(1.01);
+    color: black;
+    cursor: pointer;
+}
+
+
+
 .btn:hover{
     background-color: darkgray;
     transform: scale(1.01);
