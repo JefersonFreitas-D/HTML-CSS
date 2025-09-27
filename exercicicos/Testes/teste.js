@@ -1,4 +1,4 @@
-let nome1 = "Gustavo"
+/*let nome1 = "Gustavo"
 let sobrenome1 = "Silva"
 
 
@@ -12,5 +12,7 @@ let ola = function(nome, sobrenome){
     return `Olá, ${nome} ${sobrenome} tudo bem?!`
 }
 
-ola("João", "Pereira")
+ola("João", "Pereira")*/
+
+
 
