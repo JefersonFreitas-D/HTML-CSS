@@ -14,7 +14,7 @@ let ola = function(nome, sobrenome){
 
 ola("João", "Pereira")*/
 
-let sal = {
+/*let sal = {
     nome: "sal",
     quantidade: 20,
     preço: 2,
@@ -54,4 +54,40 @@ let sal = {
     
 
 sal.comprar(26)
-sal.adicionar(5)
+sal.adicionar(5)*/
+
+
+
+
+/*function mult(cb){
+console.log('Função Callback')
+cb(2,3)
+
+}
+
+mult(function (num1, num2){
+
+  resu = num1 * num2
+  console.log(resu)
+
+  if(resu < 10){
+    alert(`Sua multiplicação é inferior á 10, seu resultado final é: ${resu}`)
+  }
+
+})*/
+
+let time ={
+  esporte: 'Vôlei',
+  jogadores: 6,
+  posicoes: [1, 2, 3, 4, 5, 6]
+};
+
+for (let i = 0; i < time.posicoes.length; i++) {
+  /*alert(`O número de jogadores em quadra é ${time.jogadores}`);*/
+
+  console.log(`Os ${time.jogadores} jogadores estão em sua posições ${time.posicoes}`)
+}
+
+
+
+
