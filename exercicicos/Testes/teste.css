@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+div{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+#num1{
+   background-color: rgba(211, 211, 211, 0.666);
+   width: 15em;
+   padding: 0.3em;
+}
+
+#num2{
+    background-color: rgba(211, 211, 211, 0.66);
+    width: 15em;
+    padding: 0.3em;
+}
