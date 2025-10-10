@@ -81,22 +81,23 @@ mult(function (num1, num2){
 const aumentar = {
   meta: 10,
   falta:0,
-  
-  conseguir: function(meta, falta, tenho){
-
-
-
-  }
 }
 
-aumentar.tenho = 1
-console.log(aumentar.tenho)
 
 
+let pessoa = {
+  Nome: "Karen",
+  Idade:16,
+  Maioridade: function ficardemaior(Idade, aniversario){
+    let ficardemaior = Idade + aniversario;
+    if(ficardemaior < 18){
+console.log(`${pessoa.Nome} é menor de idade`)
+    }
+  }
 
+}
 
-
-
+pessoa.ficardemaior(this.Idade, 1)
 
 
 
