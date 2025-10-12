@@ -80,24 +80,41 @@ mult(function (num1, num2){
 
 const aumentar = {
   meta: 10,
-  falta:0,
+  falta:"",
+  tenho: 0,
 }
 
 
 
-let pessoa = {
+
+const pessoa = {
   Nome: "Karen",
   Idade:16,
-  Maioridade: function ficardemaior(Idade, aniversario){
-    let ficardemaior = Idade + aniversario;
-    if(ficardemaior < 18){
-console.log(`${pessoa.Nome} é menor de idade`)
+
     }
+  
+
+ /*function multp(n1, n2){
+ const n3 = 10
+
+  let res = n1 * n2 + 5 * n3
+
+  if(res <= 10){
+    console.log('Foi menor que 10')
+  }try{
+    console.log('Passou pelo try')
+  }catch (e){
+    console.log('Deu erro no catch')
   }
 
-}
+  console.log(res)
 
-pessoa.ficardemaior(this.Idade, 1)
+ } 
+
+   multp(3, 5)*/
+
+
+
 
 
 
@@ -157,7 +174,7 @@ for (let i = 0; i < time.posicoes.length; i++) {
 
             //FUNCÃO AUTO-INVOCÁVEL
 
- (function(n1, n2){
+ /*(function(n1, n2){
 m = n1 * n2
 console.log(m)
 
@@ -167,12 +184,12 @@ console.log(`Function declaration dentro de funcão auto-invocável mostrando o 
 
 mostrar()
 
- }) (2, 4)         
+ }) (2, 4)*/         
 
 
                     //ARGUMENTS
 
-   function mult(array) {
+   /*function mult(array) {
     let result = 0;
     for (let i = 0; i < array.length; i++){
       result += array[i]
@@ -181,12 +198,12 @@ mostrar()
     return result
    }              
 
-   console.log(mult([1, 2, 3, 4, 5, 6, 7, 8]))
+   console.log(mult([1, 2, 3, 4, 5, 6, 7, 8]))*/
 
 /*-------------------------------------------------*/
 
 
-   function multiplicar() {
+   /*function multiplicar() {
 
     console.log(arguments)
 
@@ -198,18 +215,86 @@ mostrar()
     return result
    }              
 
-   console.log(multiplicar(1, 2, 3, 4, 5, 6, 7, 8))
+   console.log(multiplicar(1, 2, 3, 4, 5, 6, 7, 8))*/
 
 
    /*---------------------------------------------*/
 
                 //ARROW-FUNCTION
 
- let somar = (n1, n2, n3) =>{
+ /*let somar = (n1, n2, n3) =>{
   s = n1 + n2 + n3
   console.log(s)
 
  
  }              
 
-   somar(1, 2, 3)
+   somar(1, 2, 3)*/
+
+
+  /*---------------------------------------------*/
+
+                //ASSYNC / AWAIT
+
+/*const arrayTeste = ["Array", 10, "Teste", 20]
+
+  async function buscaGoogle(){
+
+    console.log("Começou a busca")
+
+    console.log(...[arrayTeste])
+
+    if(arrayTeste){
+      console.log(arrayTeste.indexOf(10))
+    }
+   
+    try{
+  //throw Error("Erro na requisição")
+
+   const resposta = await fetch("./resultado.json")
+  if(!resposta.ok){
+    throw Error("Erro na requisição")
+    }
+
+    const resultado = await resposta.json()
+  console.log(resultado)
+   console.log("Terminou a busca")
+
+  } catch(e) {
+    console.error("Error:", e.message )
+  } finally{
+    console.log("Terminou de qualquer jeito")
+  }
+
+
+   }
+             
+
+buscaGoogle()*/
+
+
+//------------------------------------------------
+
+
+                //CONSTRUCTOR FUNCTION
+
+function Data(dia){
+  let _dia = dia
+  this.mes = "10"
+  this.ano = "2025"
+  this.criacao = new Date()
+  this.diaAtt = null
+  this.mudarDia = function(novoDia){
+  _dia = novoDia
+  this.diaAtt = new Data()
+  }
+}
+
+const novaData = new Data()
+if(this.dia === "" || this.dia === undefined){
+  this.dia = "30"
+}
+console.log(novaData)
+console.log(this.diaAtt)
+
+
