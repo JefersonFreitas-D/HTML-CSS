@@ -257,7 +257,7 @@ mostrar()
     }
 
     const resultado = await resposta.json()
-  console.log(resultado)
+  console.log(resultado.conteúdo)
    console.log("Terminou a busca")
 
   } catch(e) {
@@ -278,7 +278,7 @@ buscaGoogle()*/
 
                 //CONSTRUCTOR FUNCTION
 
-function Data(dia){
+/*function Data(dia){
   let _dia = dia
   this.mes = "10"
   this.ano = "2025"
@@ -295,6 +295,171 @@ if(this.dia === "" || this.dia === undefined){
   this.dia = "30"
 }
 console.log(novaData)
-console.log(this.diaAtt)
+console.log(this.diaAtt)*/
 
 
+
+
+/*let p1 = {
+  nome: "Karen",
+  idade: 16,
+  falou: async function(marcelo, daniel, jeferson){
+   await console.log(`Meu nome é ${this.nome}, tenho ${this.idade} anos e sou a mais mais`)
+  }
+}
+
+if (p1.falou) {
+  p1.falou();
+}
+
+else {
+  p2.falou()
+}
+
+let p2 = {
+  nome: "Marcelo",
+  idade:27,
+  falou: function(){
+    console.log(`Meu nome é ${this.nome}, tenho ${this.idade} anos e a ${p1.nome} é panema, bora meu amigo ${p3.nome}`)
+  }
+
+
+}
+
+let p3 ={
+  nome:"Daniel",
+  idade: 23,
+  falou: function(){
+    console.log(`Meu nome é ${this.nome}, tenho ${this.idade} anos e ano que vem meu Polo sai, cuida ${p4.nome}`)
+  }
+}
+
+let p4 ={
+  nome:"Jeferson",
+  idade: 23,
+  falou: function(){
+    console.log(`Meu nome é ${this.nome}, tenho ${this.idade} anos e ano que vem meu Polo sai mesmo, cuida ${p2.nome} e ${p3.nome}`)
+  }
+
+}*/
+
+
+/*let func = function(name1){
+  //name1 = ""
+  let name2 = "João"
+  console.log(`Olá, meu nome é ${name1} e sou amigo do ${name2}`)
+  
+}
+
+
+func()*/
+
+/*---------------------------------------------*/
+
+               //RECURSION
+
+               
+ /*function recursiva(n){
+  let n2 = 2
+  let num = 0
+
+  if(n % n2 === 0){
+    console.log(`O resultado de ${n} e ${n2} é 0`)
+  } else {
+    num = (n + 1) / n2
+    //return num
+  }
+
+  for( let i= 0; i < num;  i++){
+    console.log("Hello World")
+  }
+
+  console.log(num)
+  console.log(n)
+  console.log(n2)
+ }   
+ 
+ recursiva(5)*/
+
+/*------------------------------------------------*/
+
+                  //ASSIGN E KEYS
+
+let obj1 = {
+  nome: "Jeferson",
+  idade: 23,
+  sobrenome: "Freitas"
+} 
+
+let obj2 = {
+  altura: 1.76,
+  peso: 90
+}
+
+Object.assign(obj1, obj2)
+Object.keys(obj1).forEach( key => {
+  //console.log(key)
+}) // Mostra as chaves do objeto sem os valores
+
+//console.log(obj1)
+//console.log(Object.keys(obj1)) // Mostra as chaves do objeto em array
+
+
+let arr = ["Pão", 25, true, obj1]
+/*for(let i = 0; i <= arr.length - 1; i++){
+  //console.log(arr[i]) // Motra os valores dos índices do array
+
+  let metShift = arr.shift()
+
+  console.log(metShift)
+}*/
+
+  let metShift = arr.shift() // Remove um elemento no inicio do array
+
+  arr.unshift("Lata") // ADD um elemento no inicio do array
+
+  //console.log(metShift)
+  //console.log(arr)
+
+  if(arr.indexOf("Pai") === -1){
+
+    arr.push("pai")
+     console.log(arr)
+    //console.log("Elemento não encontrado ou não existe")
+  }
+
+  //-------------------------------------------------
+
+                    //SLICE
+ let arraySlice = ["ovo", "leite", "farinha", "café"]
+
+ let novoArray = arraySlice.slice(0, 3) // Cria um novo array a partir do array original
+
+ console.log(arraySlice)
+ console.log(novoArray)
+
+
+ //------------------------------------------------
+
+                  //FOR EACH
+
+ let arrayForEach = ["Banana", "Maçã", "Uva", arraySlice]
+
+ arrayForEach.forEach(item => {
+   console.log(`${item}`)
+ });
+
+
+ //--------------------------------------------------
+
+                //INCLUDES
+
+ let arrayIncludes = [1, 2, 4, 6, 8, 10]  
+
+ if(arrayIncludes.includes(4) === true){
+
+  console.log("Elemento encontrado")
+  //console.log(arrayIncludes.indexOf(4))
+ }
+
+ 
